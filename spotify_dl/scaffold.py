@@ -1,14 +1,10 @@
 import logging
 from os import getenv
-import sentry_sdk
 
 __all__ = ['log', 'check_for_tokens']
 
 logging.basicConfig(level=logging.INFO,
                     format='%(message)s')
-
-log = logging.getLogger('sdl')
-sentry_sdk.init("https://fc66a23d79634b9bba1690ea13e289f0@o321064.ingest.sentry.io/2383261")
 
 
 def check_for_tokens():
